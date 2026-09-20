@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 5px solid; */
+}
+nav{
+    background-color: rgba(47, 37, 37, 0.471);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    .navlinks ul{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li:hover{
+            cursor: pointer;
+        }
+        a:hover{
+            color: red;
+        }
+    }
+}
+.content{
+    background: url(./assets/images/images3/banner-media.webp) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        margin-top: 100px;
+        padding: 0 200px;
+        row-gap: 60px;
+        column-gap: 30px;
+        .menuItem{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            cursor: pointer;
+            img:first-of-type{
+                height: 140px;
+            }
+            img:last-of-type{
+                height: 30px;
+            }
+            h1{
+                margin: 0 0 15px 0;
+                color: white;
+            }
+        }
+    }
+}
+footer{
+    .footer-end{
+        text-align: center;
+        font-size: 13px;
+        background: linear-gradient(to right,violet,hotpink);
+        padding: 1rem;
+        color: white;
+    }
+}
+
+@media (min-width:1px) and (max-width:576px){
+    /* Changes */
+    .logo img{
+        height: 3rem;
+    }
+    nav{
+        flex-direction: column;
+        gap: 2rem;
+        .navlinks a{
+            font-size: 1.2rem;
+
+        }
+    }
+    .content .menu{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+        padding: 20px;
+        row-gap: 30px;
+        column-gap:15px;
+        .menuItem{
+            img:first-of-type{
+                height: 100px;
+            }
+            img:last-of-type{
+                height: 20px;
+            }
+            h1{
+                font-size: 20px;
+                margin: 0 0 15px 0;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: space-between;/* it provides space between the elements of the navtag */
+    align-items: center;/* all the elements inside the nav tag comes vertically centered */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+}
+.navlinks ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;/* 1rem = 16px */
+}
+.header-franchise{
+    background: url(./assets/images/images4/video-bg.png)no-repeat center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.fran{
+    font-size: 2rem;
+    margin-top: 1px;
+    margin-right: 35rem;
+    margin-left: 33rem;
+}
+.busi{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.apply{
+    background-color: palevioletred;
+    color: white;
+    position: relative;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.mission{
+    font-style: normal;
+    text-align: center;
+   
+    margin-left: 2rem;
+    font-weight: bold;
+    border-top: 800px;
+    font-size: 25px;
+}
+.deliver{
+    text-align: center;
+    margin-left: 1rem;
+    font-style: normal;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+.deliver1{
+    text-align: center;
+    margin-left: 1rem;
+    font-style: normal;
+    font-size: 20px;
+}
+.brand{
+    text-align: center;
+    margin-left: 3rem;
+    font-style: normal;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+.brand1{
+    text-align: center;
+    margin-left: 1px;
+    font-style: normal;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.line{
+    width: 80%;
+    margin-bottom: 50px;
+    margin: 60px;
+    margin-left: 10rem;
+    background-color: rgb(210, 149, 210);
+    height: 3px;
+    border-bottom: 2px solid rgb(197, 133, 197);
+    gap: 3rem;
+}
+    
+.benefits{
+    text-align: center;
+    margin-left: 3rem;
+    font-size: 2rem;
+    margin-bottom: 7rem;
+    
+}
+.main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+   /* margin-bottom: 20rem;*/
+   div{
+    width: 300px;
+    img{
+        width: 80px;
+        height: 80px;
+        h3{
+            font-size: 15px;
+        }
+    }
+   }
+}
+.ima1{
+    margin-left: 5rem;
+   
+}
+.low{
+    margin-left: 3rem;
+}
+.p1{
+    margin-left: 3rem;
+}
+.ima2{
+    margin-left: 5rem;
+}
+.low1{
+    margin-left: 1rem;
+}
+.p2{
+   margin-left: 1px;
+}
+.ima3{
+    margin-left: 4rem;
+}
+.low2{
+    margin-left: 1rem;
+}
+.p3{
+    margin-left: 1px;
+}
+.line1{
+    width: 80%;
+    margin-bottom: 600px;
+    margin: 60px;
+    margin-left: 10rem;
+    background-color: rgb(210, 149, 210);
+    height: 3px;
+    border-bottom: 2px solid rgb(197, 133, 197);
+    gap: 4rem;
+    margin-top: 20px;
+}
+.here{
+    margin-left: 600px;
+    font-size: 30px;
+    margin-top: 2px;
+}
+.request{
+    margin-left: 600px;
+    font-size: 17px;
+    margin-top: 1px;
+}
+.grid{
+    width: 500px;
+    height: 600px;
+    padding: 0 3rem;
+}
+.line2{
+    width: 80%;
+    margin-bottom: 600px;
+    margin: 60px;
+    margin-left: 10rem;
+    background-color: rgb(210, 149, 210);
+    height: 3px;
+    border-bottom: 2px solid rgb(197, 133, 197);
+    gap: 3rem;
+    margin-top: 10rem;
+}
+.bigimg{
+    height: 40rem;
+    width: 60rem;
+}
+.parent1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fran1{
+    margin-left: 42rem;
+    font-size: 30px;
+    margin-top: 1px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 50px;
+
+}
+.bro{
+    margin-right: 2rem;
+    gap: 1rem;
+}
+.svg2{
+    height: 70px;
+    width: 70px;
+}

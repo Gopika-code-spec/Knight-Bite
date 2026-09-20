@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color:rgba(47, 37, 37, 0.471);
+    display: flex;/*for inline display--converts all block elements to inline elements of a parent*/ 
+    justify-content: space-between; /*It Provides space btw Elements*/
+    align-items: center;/*all elements in nav tag comes vertically center*/
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+}
+
+.navlinks ul{
+    display: flex;
+    list-style: none;
+    gap:2rem; /*1rem = 16px*/
+}
+
+.navlinks ul li:hover{
+    cursor: pointer;
+    
+}
+
+a{
+    text-decoration: none;   
+    color: white;
+}
+
+.navlinks ul a:hover{
+    color: rgb(162, 19, 21);
+}
+
+.header-home{
+    background: url(Assets/Images/app-link-background.svg) no-repeat center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    align-content: center;
+    h1{
+        font-size: 4.5rem;
+        font-family: cursive;
+        margin-bottom: 2rem;
+    }
+
+    #ios{
+        height: 3.5rem;
+    }
+
+    .store-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.features{
+    min-height: 100vh; /*height:100vh; fixed height*/
+    text-align: center;
+    align-content: center;
+    padding: 0 2rem;
+
+    h1{
+        font-family: cursive;
+        font-size: 4.5rem;
+        margin-bottom: 4rem;
+    }
+    .inner-features{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+/* section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+} */
+.banner1, .banner2{
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    h1{
+        font-size: 4.5rem;
+        color: white;
+    }
+}
+.banner1{
+     background: url(Assets/Images/banner-1.webp) no-repeat center/cover;
+}
+.banner2{
+    background: url(Assets/Images/banner-2.webp) no-repeat center/cover;
+    button{
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        /* font-size: 3rem; */
+    }
+}
+/* Home Page Footer */
+.footer-home{
+    /* height: 100vh; */
+    align-content: center;
+    h1{
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        font-family: cursive;
+        padding-top: 2rem;
+    }
+    .footer-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        gap: 3rem;
+        justify-content: center;
+        padding: 0 3rem;
+        line-height: 2rem;
+    }
+    a{
+        color: black;
+    }
+    .social-icons ul{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
+    h3{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-family: cursive;
+        color: rgba(0, 0, 0, 0.516);
+    }
+    p{
+        font-size: 1.5rem;
+        font-family: cursive;
+        color: black;
+    }
+    .Qlinks a{
+        color: rgb(224, 32, 64);
+    }
+    li{
+        font-size: 1.2rem;
+    }
+    .send-mail{
+        position: relative;
+        width: 60%;
+        padding: 1rem;
+        input{
+            width: 100%;
+            padding: 1.2rem 2rem;
+            border-radius: 30px;
+            border: 1px solid gray;
+        }
+        img{
+            height: 3.4rem;
+            position: absolute;
+            right: 0px;
+        }
+    }
+    .footer-logos{
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .footer-end{
+        text-align: center;
+        font-size: 13px;
+        background: linear-gradient(to right, violet,hotpink);
+        padding: 1rem;
+        color: white;
+    }
+}
+
+/* About Page */
+.header-about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: url(Assets/Images2/banner.webp) no-repeat center/cover;
+    h1{
+        color: white;
+        font-size: 3.8vw;
+        margin-top: 150px;
+        padding-left: 80px;
+        width: 50vw;
+        letter-spacing: 2px;
+        font-family: cursive;
+    }
+}
+main{
+    .parent{
+        margin: 100px 0;
+        display: grid;
+        row-gap: 70px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-content: center;
+        padding: 0 100px;
+        column-gap: 40px;
+        .grid-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.386);
+            p{
+                letter-spacing: 2px;
+                margin-bottom: 1rem;
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+            
+        }
+    }
+}
+.footer-about{
+    align-content: center;
+    .footer-main1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        justify-content: center;
+        padding: 0 3rem;
+        
+        .grid-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 30px;
+            
+        }
+        .Locations{
+            margin-top: 0;
+            margin-left: 80px;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+    h3{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-family: cursive;
+        color: rgba(0, 0, 0, 0.516);
+    }
+    .social-icons ul{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
+    .footer-end{
+        text-align: center;
+        font-size: 13px;
+        background: linear-gradient(to right, violet,hotpink);
+        padding: 1rem;
+        color: white;
+    }
+}
+
+
+
+
+/* Home Page mobile responsive code */
+@media (min-width:1px) and (max-width:576px){
+    /* Changes */
+    .logo img{
+        height: 3rem;
+    }
+    nav{
+        flex-direction: column;
+        gap: 2rem;
+        .navlinks a{
+            font-size: 1.2rem;
+
+        }
+    }
+    .inner-features{
+        flex-direction: column;
+    }
+    .footer-home{
+        .footer-main{
+            grid-template-columns: 1fr;
+        }
+        h3{
+            font-size: 2rem;
+        }
+        .send-mail{
+            width: 100%;
+        }
+    }
+}
